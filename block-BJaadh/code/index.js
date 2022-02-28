@@ -21,11 +21,12 @@ numbers.lastIndexOf(9);
 
 // - Convert value of strings array into a sentance like "This is a collection of words"
 
-
+strings.join(" ");
 
 // - Add two new words in the strings array "called" and "sentance"
 
 strings.push("called", "sentance");
+
 
 // - Again convert the updated array (strings) into sentance like "This is a collection of words called sentance"
 
@@ -33,16 +34,20 @@ strings.join(' ');
 
 // - Remove the first word in the array (strings)
 
-strings.shift();
+strings.unshift();
+
 
 
 // - Find all the words that contain 'is' use string method 'includes'
 
 strings.includes('is');
 
+let allIs = strings.filter((string) => string.includes("is"));
+
 // - Find all the words that contain 'is' use string method 'indexOf'
 
 strings.indexOf('is');
+let allIs = strings.filter((string) => string.indexof("is")!==-1) ;
 
 // - Check if all the numbers in numbers array are divisible by three use array method (every)
 
@@ -54,9 +59,16 @@ numbers.sort();
 
 strings.sort();
 
+// 
+
+numbers.sort((a,b) =>  a-b)
+
 // - Remove the last word in strings
 
 strings.splice(strings.length-1);
+
+// 
+strings.pop();
 
 // - Find largest number in numbers
 
@@ -71,6 +83,10 @@ bignumber = arr[i];
 return bignumber; 
 }
 
+// 
+
+let largest = number.sort((a,b) => a.length-b.length).pop();
+
 // - Find longest string in strings 
 
 let longest = " ";
@@ -84,6 +100,11 @@ function longestString(arr){
 }
 return longest;
 }
+
+// 
+
+let longest = number.sort((a,b) => a-b).pop();
+
 
 
 // - Find all the even numbers 
@@ -101,23 +122,38 @@ numbers.unshift();
 
 // - Make a subset of numbers array [18,9,7,11]
 
-
+numbers.slice(3,5)
 
 // - Make a subset of strings array ['a','collection']
 
-
+strings.concat(3, 5) 
 
 // - Replace 12 & 18 with 1221 and 1881
 
 numbers.splice(12, 1221);
 numbers.splice(18, 1881);
 
+
+console.log(numbers.map((num) =>{
+  if (num === 12) {
+    return 1221;
+  } else if (num === 18) {
+    return 1881;
+  } else {
+    return num;
+  }
+})
+
 // - Replace words in strings array with the length of the word
 
-
+let stringsLength = strings.map((string) => string.length);
+ 
 
 // - Find the sum of the length of words using above question
 
+stringsLength.reduce((acc,cv) => {
+    acc = acc + cv;
+},0)
 
 
 // - Customers Array
@@ -129,18 +165,24 @@ var customers = [
 ];
 // - Find all customers whose firstname starts with 'J'
 
-
+let filteredCustomer = customers.filter((customer) =>
+  customer.firstname.startsWith("J")
+  );
 
 // - Create new array with only first name
 
-
-
+let firstNameCustomer = customers.map((customer) =>
+  (customer) => customer.firstName
+  );
+ 
 // - Create new array with all the full names (ex: "Joe Blogs")
 
-
+let fullNameCustomer = customer.map( (customers) => $`{customer.firstName} ${customers.lastName}` 
+);
 
 // - Sort the array created above alphabetically
 
-  
+  fullNameCustomer.sort();
 
 // - Create a new array that contains only user who has at least one vowel in the firstname.
+ 
