@@ -13,7 +13,7 @@ let doubleNum = numbers.forEach(double);
 ![](./img/main.png)
 
 
-
+It console all the numbers in the array.
 
 
 ```js
@@ -24,6 +24,8 @@ function double(num) {
 let doubleNum = numbers.forEach(double);
 ```
 
+ [200, 400, 66, 90, 130, 152, 102];
+
 
 
 ```js
@@ -33,8 +35,13 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
-
-
+100
+200
+33
+45
+65
+76
+51
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -44,6 +51,9 @@ function double(num) {
 let doubleNumbers = numbers.map(double);
 ```
 
+[200, 400, 66, 90, 130, 152, 102];
+
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -51,6 +61,7 @@ function addTwo(num) {
 }
 let doubleNumbers = numbers.map(addTwo);
 ```
+[102, 202, 35, 47, 67, 78, 53];
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -59,6 +70,13 @@ function addTwo(num) {
 }
 let doubleNumbers = numbers.map(addTwo);
 ```
+100
+200
+ 33
+ 45
+ 65
+ 76
+ 51
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -68,6 +86,10 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+
+It console all the numbers in the array.
+
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function isOdd(num) {
@@ -75,6 +97,10 @@ function isOdd(num) {
 }
 let oddNumbers = numbers.filter(isOdd);
 ```
+
+[ 33, 45, 76, 51];
+
+
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -84,6 +110,9 @@ function test(num) {
 let filteredNumbers = numbers.filter(test);
 ```
 
+ [100, 200, 33, 45, 65, 76, 51];
+
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function test(num) {
@@ -91,6 +120,13 @@ function test(num) {
 }
 let filteredNumbers = numbers.filter(test);
 ```
+100
+200
+ 33
+ 45
+ 65
+ 76
+ 51
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -100,6 +136,8 @@ function add(accumulator, currentValue) {
 let sum = numbers.reduce(add);
 ```
 
+505
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function add(accumulator, currentValue) {
@@ -107,3 +145,4 @@ function add(accumulator, currentValue) {
 }
 let sum = numbers.reduce(add);
 ```
+nan
