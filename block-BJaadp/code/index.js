@@ -17,6 +17,8 @@ let persons = [
 
 // Find the average grade
 
+persond
+
 // Find the average grade of male
 
 // Find the average grade of female
