@@ -6,7 +6,7 @@ const got = {
       people: [
         {
           name: "Eddard Stark",
-          description:
+          description: 
             "Lord of Winterfell - Warden of the North - Hand of the King - Married to Catelyn (Tully) Stark",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-eddard-stark.jpg",
