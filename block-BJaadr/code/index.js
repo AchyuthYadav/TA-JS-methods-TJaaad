@@ -1,35 +1,62 @@
 // NOTE: You can only use the (reduce) array method to solve this exercise:
 
 function countAllPeople() {
-  // your code goes here
+  
+  got.houses.reduce( (acc , cv) => {
+        
+    return acc;
+  }, 0)
+
 }
 
 function peopleByHouses() {
-  // your code goes here
+  let result = got.houses.reduce((acc, cv) => {
+    acc[cv.name] = cv.people.length;
+    return acc;
+} , {})
+
+return result ;
 }
 
 function everyone() {
-  // your code goes here
+
+return got.houses.reduce((acc, cv) => {
+ acc.push(cv.people.filter(a => {
+   acc.push(a.name)
+ }))
+
+ return acc
+}, [])
+
 }
 
 function nameWithS() {
-  // your code goes here
+ 
+
 }
 
 function nameWithA() {
-  // your code goes here
+  
+
+
 }
 
 function surnameWithS() {
-  // your code goes here
+  
+
+
 }
 
 function surnameWithA() {
-  // your code goes here
+  
+
+
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+  
+
+
 }
 
 // Testing your result after writing your function
